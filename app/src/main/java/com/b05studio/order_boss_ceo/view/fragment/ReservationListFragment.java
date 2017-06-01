@@ -129,9 +129,11 @@ public class ReservationListFragment extends Fragment {
                 for (int i = 0; i < reservationInfo.getOrderInfos().size(); i++) {
                     View v = inflater.from(parent.getContext()).inflate(R.layout.cardview_reservation_list_order, parent, false);
                     TextView reservationListOrderName = (TextView) v.findViewById(R.id.reservationListOrderName);
+                    TextView reservationListOrderNumber = (TextView)v.findViewById(R.id.reservationListOrderNumber);
                     TextView reservationListOrderPrice = (TextView) v.findViewById(R.id.reservationListOrderPrice);
                     reservationListOrderName.setText(reservationInfo.getOrderInfos().get(i).getMenuInfo().getName());
-                    reservationListOrderPrice.setText(reservationInfo.getOrderInfos().get(i).getMenuNum() + "*" + reservationInfo.getOrderInfos().get(i).getMenuInfo().getPrice());
+                    reservationListOrderNumber.setText(reservationInfo.getOrderInfos().get(i).getMenuNum()+"개");
+                    reservationListOrderPrice.setText(""+reservationInfo.getOrderInfos().get(i).getMenuInfo().getPrice());
                     holder.reservationListOrderList.addView(v);
                 }
             }
