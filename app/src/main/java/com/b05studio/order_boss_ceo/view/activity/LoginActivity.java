@@ -1,4 +1,4 @@
-package com.b05studio.order_boss_ceo;
+package com.b05studio.order_boss_ceo.view.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.b05studio.order_boss_ceo.R;
+import com.b05studio.order_boss_ceo.view.activity.MainActivity;
 
 
 /**
